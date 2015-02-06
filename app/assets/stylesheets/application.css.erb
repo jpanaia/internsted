@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+
+html,
+body {
+  height: 100%;
+/*  background-color: #333;
+*/  background: url(<%= asset_path "rockstar.jpeg" %>) no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+}
+
+h2 {
+	font-weight: 700;
+}
+
+p, .btn, h2, h3 {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p {
+	font-size: 22px;
+}
+
+.btn-lg {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.well {
+	text-align:center;
+	background: rgba(255,255,255,0.5);
+}
+
+.hat {
+	margin-top: -10px;
+	-ms-transform: rotate(-10deg); /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+    transform: rotate(-10deg);
+}
