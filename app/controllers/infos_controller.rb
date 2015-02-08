@@ -14,7 +14,7 @@ class InfosController < ApplicationController
 
     respond_to do |format|
       if @info.save
-        format.html { redirect_to @info, notice: 'Info was successfully created.' }
+        format.html { redirect_to thanks_path, notice: 'Thanks!' }
         format.json { render :show, status: :created, location: @info }
       else
         format.html { render :new }
