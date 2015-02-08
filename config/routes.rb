@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :infos
+
   root 'main#index'
 
   get 'thanks' => 'main#thanks'
