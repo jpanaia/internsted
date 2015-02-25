@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @survey.date %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @survey.duration %>
+</p>
+
+<p>
+  <strong>Pay:</strong>
+  <%= @survey.pay %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @survey.position %>
+</p>
+
+<p>
+  <strong>Full part time:</strong>
+  <%= @survey.full_part_time %>
+</p>
+
+<%= link_to 'Edit', edit_survey_path(@survey) %> |
+<%= link_to 'Back', surveys_path %>

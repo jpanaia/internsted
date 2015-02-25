@@ -4,4 +4,5 @@ class MainController < ApplicationController
 
   def thanks
   end
+
 end

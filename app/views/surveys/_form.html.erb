@@ -1,0 +1,43 @@
+<div id="survey">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+
+      <%= form_for(@survey) do |f| %>
+      <% if @survey.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@survey.errors.count, "error") %> prohibited this survey from being saved:</h2>
+
+          <ul>
+          <% @survey.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <div class="form-group">
+        <%= f.label "Approximate start date?" %><br>
+        <%= f.text_field :date, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label "How long will the position last?" %><br>
+        <%= f.text_field :duration, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label "How much will it pay?" %><br>
+        <%= f.text_field :pay, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label "Is it technical or non-technical?" %><br>
+        <%= f.text_field :position, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label "Is it full or part time?" %><br>
+        <%= f.text_field :full_part_time, class: "form-control" %>
+      </div>
+      <div class="actions">
+        <%= f.submit "Find My Intern", class: "btn btn-lg btn-primary" %>
+      </div>
+    <% end %>
+    </div>
+  </div>
+</div>
